@@ -1,29 +1,45 @@
-/* min reste */
+/* min reset */
 *,
 ::after,
 ::before {
   box-sizing: border-box;
   text-decoration: none;
-  color: initial;
-  font-family: "Raleway", sans-serif;
   list-style: none;
+  border: none;
+  color: initial;
   margin: 0;
+  padding: 0;
 }
 
 /* variable */
 :root {
   --main-blue: #0065fc;
-  --grey: #F2F2F2;
+  --secondary-blue: #deebff;
+  --grey: #f2f2f2;
+  --darkgrey: #e2e2e2;
+}
+
+/* generic */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+main,
+footer {
+  font-family: "Raleway", sans-serif;
+
+  margin: 0px 60px;
 }
 
 /*navigation*/
 
-header, main, footer {
-  margin: 0px 80px;
-}
-
 .logo {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 50px;
 }
 
 .links {
@@ -32,9 +48,9 @@ header, main, footer {
 }
 
 .nav-link {
-  padding: 80px;
-  border-top: 3px solid #ffffff00;
-  font-size: 30px;
+  padding: 50px;
+  font-size: 20px;
+  border-top: 3px solid #ff00;
 }
 
 .nav-link a {
@@ -45,18 +61,107 @@ header, main, footer {
   border-color: var(--main-blue);
 }
 
+/*main*/
+main {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+p {
+  font-weight: 500;
+}
+
 /*search*/
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+}
+
+.ico-container {
+  width: 50px;
+  background-color: var(--grey);
+  border-radius: 15px 0px 0px 15px;
+}
 
 .search-input {
-  height: 80px;
-  width: 300px;
-  border: none;
+  height: 50px;
+  width: 250px;
+  padding: 20px;
   border: 3px solid var(--grey);
+  border-right: none;
   box-shadow: none;
 }
 
 .search-input::placeholder {
   color: black;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 17px;
+}
+
+.search-button {
+  background-color: var(--main-blue);
+  margin: 0;
+  width: 120px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+/*filters*/
+
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+}
+.filters > * {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters-text {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.filters li {
+  border: 2px solid var(--darkgrey);
+  border-radius: 50px;
+  border-left: none;
+  font-weight: 800;
+  font-size: 17px;
+  height: auto;
+}
+
+.filters li:hover{
+  border-color: var(--main-blue);
+  color: var(--main-blue);
+  cursor: pointer;
+}
+
+.filters span {
+  padding: 0px 20px;
+  color: inherit;
+}
+
+
+.ico {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary-blue);
+  border-radius: 50%;
+}
+.ico i::before {
+  color: var(--main-blue);
 }
