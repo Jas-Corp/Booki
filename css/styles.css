@@ -1,0 +1,45 @@
+/* min reste */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: initial;
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+  margin: 0;
+}
+
+/* variable */
+:root {
+  --main-blue: #0065fc;
+}
+
+/*navigation*/
+
+header {
+  margin: 0px 80px;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+ul {
+  float: right;
+  display: flex;
+}
+
+.nav-link {
+  padding: 80px;
+  border-top: 3px solid #ffffff00;
+  font-size: 30px;
+}
+
+.nav-link a {
+  color: inherit;
+}
+.nav-link:hover {
+  color: var(--main-blue);
+  border-color: var(--main-blue);
+}
