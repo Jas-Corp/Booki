@@ -80,7 +80,7 @@ p {
   display: flex;
 }
 
-.ico-container {
+.map-container {
   width: 50px;
   background-color: var(--grey);
   border-radius: 15px 0px 0px 15px;
@@ -121,6 +121,7 @@ p {
 .filters {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 .filters > * {
   margin-right: 50px;
@@ -154,7 +155,6 @@ p {
   color: inherit;
 }
 
-
 .ico {
   position: relative;
   width: 50px;
@@ -163,5 +163,23 @@ p {
   border-radius: 50%;
 }
 .ico i::before {
+  color: var(--main-blue);
+}
+
+/*informations*/
+
+.info-container{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.info-ico-container{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--grey);
+  margin-right: 10px;
+}
+.info-ico-container i::before{
   color: var(--main-blue);
 }
