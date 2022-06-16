@@ -13,11 +13,12 @@
 /* variable */
 :root {
   --main-blue: #0065fc;
+  --grey: #F2F2F2;
 }
 
 /*navigation*/
 
-header {
+header, main, footer {
   margin: 0px 80px;
 }
 
@@ -25,7 +26,7 @@ header {
   margin-top: 50px;
 }
 
-ul {
+.links {
   float: right;
   display: flex;
 }
@@ -42,4 +43,20 @@ ul {
 .nav-link:hover {
   color: var(--main-blue);
   border-color: var(--main-blue);
+}
+
+/*search*/
+
+.search-input {
+  height: 80px;
+  width: 300px;
+  border: none;
+  border: 3px solid var(--grey);
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: black;
+  font-weight: 800;
+  font-size: 30px;
 }
