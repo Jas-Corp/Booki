@@ -31,7 +31,6 @@ main {
   font-family: "Raleway", sans-serif;
   margin: 0px 60px;
 }
-/* breakpoint */
 
 /* icon */
 .ico-blue i::before {
@@ -43,9 +42,9 @@ main {
 /*navigation*/
 
 .logo {
+  height: 50px;
   margin-top: 30px;
   margin-left: 10px;
-  height: 50px;
 }
 
 .links {
@@ -56,8 +55,8 @@ main {
 .nav-link {
   padding: 50px;
   font-size: 20px;
-  border-top: 3px solid #ff00;
   cursor: pointer;
+  border-top: 3px solid #ff00;
 }
 
 .nav-link a {
@@ -89,33 +88,32 @@ p {
 
 .map-container {
   width: 50px;
-  background-color: var(--grey);
   border-radius: 15px 0px 0px 15px;
+  background-color: var(--grey);
 }
 
 .search-input {
   height: 50px;
   width: 250px;
   padding: 20px;
-  border: 3px solid var(--grey);
   border-right: none;
   box-shadow: none;
+  border: 3px solid var(--grey);
 }
 
 .search-input::placeholder {
-  color: black;
   font-weight: 800;
   font-size: 17px;
+  color: black;
 }
 
 .search-button {
-  background-color: var(--main-blue);
-  margin: 0;
   width: 120px;
-  color: white;
   font-size: 18px;
   font-weight: 600;
   border-radius: 0px 15px 15px 0px;
+  background-color: var(--main-blue);
+  color: white;
 }
 
 .search-button:hover {
@@ -138,22 +136,21 @@ p {
 
 .filters-text {
   font-weight: 900;
-  font-size: 17px;
 }
 
 .filters li:not(:first-child) {
-  border: 2px solid var(--darkgrey);
+  height: auto;
+  font-size: 17px;
+  font-weight: 800;
   border-radius: 50px;
   border-left: none;
-  font-weight: 800;
-  font-size: 17px;
-  height: auto;
+  border: 2px solid var(--darkgrey);
 }
 
 .filters li:hover:not(:first-child) {
+  cursor: pointer;
   border-color: var(--main-blue);
   color: var(--main-blue);
-  cursor: pointer;
 }
 
 .filters span {
@@ -165,8 +162,8 @@ p {
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: var(--secondary-blue);
   border-radius: 50%;
+  background-color: var(--secondary-blue);
 }
 
 /*informations*/
@@ -180,8 +177,8 @@ p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid var(--grey);
   margin-right: 10px;
+  border: 2px solid var(--grey);
 }
 
 /*hebergement*/
@@ -195,19 +192,12 @@ article {
   background-color: var(--grey);
   border-radius: 15px;
   padding: 30px;
-  margin-right: 20px;
 }
+
 article#marseille {
   width: 70%;
   height: auto;
-}
-.marseille-more {
-  margin: 15px;
-  font-weight: 900;
-}
-article#famous {
-  width: 500px;
-  height: auto;
+  margin-right: 20px;
 }
 
 /*cartes*/
@@ -255,7 +245,18 @@ article#famous {
   margin-top: 10px;
   display: flex;
 }
+
+.marseille-more {
+  margin: 15px;
+  font-weight: 900;
+}
 /* Carte populairas */
+
+article#famous {
+  width: 500px;
+  height: auto;
+}
+
 .famous-head {
   display: flex;
   align-items: center;
@@ -286,24 +287,26 @@ section#activity {
 
 .activity-cards-container {
   margin-top: 30px;
+  height: 500px;
   display: flex;
   justify-content: space-around;
-  height: 500px;
 }
 
 /* toutes les cartes */
 .activty-card {
   width: 100%;
   object-fit: cover;
-  box-shadow: 5px 5px 15px 5px #82828244;
   border-radius: 15px;
+  box-shadow: 5px 5px 15px 5px #82828244;
   transition-duration: 0.2s;
 }
+
 .activty-card img {
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
+
 .activty-card h3 {
   padding: 15px;
 }
@@ -376,6 +379,8 @@ footer li:hover a {
   header {
     margin-bottom: 10px;
   }
+
+  /* Activité */
   .big-card {
     height: 70%;
   }
@@ -392,6 +397,7 @@ footer li:hover a {
 }
 /*Téléphone*/
 @media screen and (max-width: 768px) {
+  /* navigation  */
   nav {
     display: flex;
     flex-direction: column;
@@ -408,6 +414,7 @@ footer li:hover a {
     border-color: var(--main-blue);
   }
 
+  /* hebergement */
   #hosting {
     flex-direction: column-reverse;
     align-items: center;
@@ -417,10 +424,12 @@ footer li:hover a {
   #marseille {
     background-color: white;
   }
+
   .card {
     width: 100%;
   }
 
+  /* Activité */
   .activity-cards-container {
     flex-direction: column;
     align-items: center;
@@ -450,6 +459,7 @@ footer li:hover a {
     width: 500px;
   }
 
+  /* Bas de page */
   footer {
     flex-direction: column;
     align-items: flex-start;
