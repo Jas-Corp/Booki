@@ -1,4 +1,4 @@
-[![booki.png](https://i.postimg.cc/85QSHz3Q/booki.png)](https://postimg.cc/XZ8mN44Q)
+[![booki.png](https://i.postimg.cc/cJcgqPNz/booki.png)](https://postimg.cc/xkcTMx8G)
 
 
 *Booki* is a small **HTML & css** project for the **openclassroom training course.** 
