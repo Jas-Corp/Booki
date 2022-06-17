@@ -33,7 +33,15 @@ footer {
 
   margin: 0px 60px;
 }
+/* breakpoint */
 
+/* icon */
+.ico-blue i::before {
+  color: var(--main-blue);
+}
+.ico-grey i::before {
+  color: var(--darkgrey);
+}
 /*navigation*/
 
 .logo {
@@ -117,7 +125,6 @@ p {
 
 /*filters*/
 
-
 .filters {
   margin-top: 20px;
   display: flex;
@@ -144,7 +151,7 @@ p {
   height: auto;
 }
 
-.filters li:hover{
+.filters li:hover {
   border-color: var(--main-blue);
   color: var(--main-blue);
   cursor: pointer;
@@ -155,79 +162,65 @@ p {
   color: inherit;
 }
 
-.ico {
+.filters-ico-container {
   position: relative;
   width: 50px;
   height: 50px;
   background-color: var(--secondary-blue);
   border-radius: 50%;
 }
-.ico i::before {
-  color: var(--main-blue);
-}
 
 /*informations*/
 
-.info-container{
+.info-container {
   margin-top: 30px;
   display: flex;
   align-items: center;
 }
-.info-ico-container{
+.info-ico-container {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 2px solid var(--grey);
   margin-right: 10px;
 }
-.info-ico-container i::before{
-  color: var(--main-blue);
-}
 
 /*hebergement*/
 
-section.hosting{
+section#hosting {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-article{
+article {
   background-color: var(--grey);
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px;
   margin-right: 20px;
 }
-article.marseille{
+article#marseille {
   width: 70%;
   height: auto;
 }
-article.famous{
+.marseille-more {
+  margin: 15px;
+  font-weight: 900;
+}
+article#famous {
   width: 500px;
-  height: 500px;
+  height: auto;
 }
 
 /*cartes*/
-.cards{
+.cards {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
-  flex-basis: 33.3333333%;
   flex-wrap: wrap;
+}
 
-}
-.card img {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-.img-container{
-  width: 100%;
-  height: 50%;
-  
-}
-.card{
+.card {
+  min-width: 193px;
   width: 30%;
   height: 220px;
   background-color: white;
@@ -235,14 +228,48 @@ article.famous{
   box-shadow: 5px 5px 15px 5px #82828244;
   margin-bottom: 20px;
   padding: 5px;
-
-
-
-  
 }
 
-.card-content{
+.card:hover .img-container {
+  height: 60%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.img-container {
+  width: 100%;
+  height: 50%;
+  transition-duration: 0.2s;
+}
+
+.card-content {
   padding: 15px;
-  
 }
 
+.stars {
+  margin-top: 10px;
+  display: flex;
+}
+/* Carte populairas */
+.famous-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.famous {
+  width: 100%;
+  height: 160px;
+  display: flex;
+}
+.famous img {
+  border-radius: 15px 0px 0px 15px;
+}
+.card-text {
+  width: 200px;
+}
