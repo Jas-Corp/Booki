@@ -39,6 +39,9 @@ main {
 .ico-grey i::before {
   color: var(--darkgrey);
 }
+.ico-white i::before {
+  color: white;
+}
 /*navigation*/
 
 .logo {
@@ -61,6 +64,7 @@ main {
 
 .nav-link a {
   color: inherit;
+  
 }
 .nav-link:hover {
   color: var(--main-blue);
@@ -113,7 +117,13 @@ p {
   font-weight: 600;
   border-radius: 0px 15px 15px 0px;
   background-color: var(--main-blue);
+
+}
+.search-button span{
   color: white;
+}
+.search-button i{
+  display: none;
 }
 
 .search-button:hover {
@@ -239,6 +249,9 @@ article#marseille {
 
 .card-content {
   padding: 15px;
+  display: flex;
+
+  flex-direction: column;
 }
 
 .stars {
@@ -343,7 +356,7 @@ section#activity {
 
 footer {
   font-family: "Raleway", sans-serif;
-  margin-top: 100px;
+  margin-top: 10px;
   background-color: var(--grey);
 
   display: flex;
@@ -371,14 +384,24 @@ footer li:hover a {
 
 /*Tablette*/
 @media screen and (max-width: 992px) {
-  main {
-    font-family: "Raleway", sans-serif;
-    margin: 0px 10px;
-  }
+
 
   header {
     margin-bottom: 10px;
   }
+  /* hebergement */
+  #hosting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  article#marseille{
+    width: 100%;
+
+    margin-bottom: 30px;
+  }
+
+
 
   /* Activité */
   .big-card {
@@ -397,6 +420,12 @@ footer li:hover a {
 }
 /*Téléphone*/
 @media screen and (max-width: 768px) {
+ 
+  header,main {
+    font-family: "Raleway", sans-serif;
+    margin: 0px 10px;
+  }
+
   /* navigation  */
   nav {
     display: flex;
@@ -414,6 +443,32 @@ footer li:hover a {
     border-color: var(--main-blue);
   }
 
+  /* bar de recherche  */
+  #search{
+    text-align: center;
+
+  }
+  .search-bar{
+    justify-content: center;
+  }
+  .search-button{
+    width: 54px;
+  }
+  .search-button i{
+    display: block;
+
+  }
+  .search-button span{
+  display: none;
+  }
+
+  .filters{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  
   /* hebergement */
   #hosting {
     flex-direction: column-reverse;
@@ -421,8 +476,17 @@ footer li:hover a {
     justify-content: space-between;
   }
 
+  /* Marseille */
   #marseille {
     background-color: white;
+  }
+
+  /* Populaire */
+  article#famous {
+    width: 100%;
+    max-width: 413px;
+    height: auto;
+    min-width: 276px;
   }
 
   .card {
@@ -437,26 +501,30 @@ footer li:hover a {
   }
   .activty-card {
     height: 220px;
+
   }
   .big-card {
-    width: 431px;
+    width: 90%;
+    max-width: 431px;
     margin: 15px;
   }
 
   .big-card:hover {
-    width: 500px;
+    width: 100%;
   }
 
   .little-cards {
-    width: 431px;
+    width: 90%;
+    max-width: 431px;
     margin-top: 15px;
+
   }
   .little-card {
     margin-bottom: 15px;
   }
 
-  .little-card:hover {
-    width: 500px;
+  .little-card:hover .little-cards{
+    width: 100%;
   }
 
   /* Bas de page */
