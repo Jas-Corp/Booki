@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" height="100" src="https://i.postimg.cc/85QSHz3Q/booki.png" alt="Booki logo">
+  <img width="300" height="100" src="https://i.postimg.cc/85QSHz3Q/booki.png" alt="Booki logo">
 </p>
 <hr>
 
