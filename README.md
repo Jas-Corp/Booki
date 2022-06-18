@@ -1,5 +1,5 @@
 
-  <img width="300px" src="https://zupimages.net/up/22/24/7w3i.png" alt="Booki Jas Logo">
+  <img src="https://zupimages.net/up/22/24/7w3i.png" alt="Booki Jas Logo">
 
 <hr>
 
