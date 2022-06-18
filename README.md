@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://i.postimg.cc/DwXWCHML/Group-2.png" alt="Booki Jas Logo">
-</p>
+
+  <img width="300px" src="https://i.postimg.cc/DwXWCHML/Group-2.png" alt="Booki Jas Logo">
+
 <hr>
 
 _Booki_ is a small **HTML & CSS** project for the **openclassroom training course.**
