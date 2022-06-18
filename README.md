@@ -8,6 +8,6 @@ It's a **landing page** for a **hollydays website.**
 
 It is **based** on a **model provided** for the exercise (_see below_)
 
-
+<p align="center">
   <img src="https://i.postimg.cc/Qdm9wRDy/Desktop-1.png" alt="maquette">
-
+</p>
