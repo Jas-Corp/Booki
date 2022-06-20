@@ -234,28 +234,19 @@ article#marseille {
   max-width: 400px;
 }
 
-.card:hover .img-container {
-  height: 45%;
-}
-
 .card img {
   width: 100%;
   height: 100%;
-  display: inline-block;
   border-radius: 15px 15px 0px 0px;
 }
 
 .img-container {
-  width: 100%;
   height: 50%;
   transition-duration: 0.2s;
 }
 
 .card-content {
   padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: ;
 }
 
 .stars {
@@ -271,7 +262,6 @@ article#marseille {
 
 article#famous {
   width: 500px;
-  height: auto;
 }
 
 .famous-head {
@@ -291,9 +281,6 @@ article#famous {
 .card-text {
   width: 200px;
   transition-duration: 0.2s;
-}
-.famous:hover .card-text {
-  width: 220px;
 }
 
 /* Activités */
@@ -333,9 +320,6 @@ section#activity {
 .big-card img {
   height: 87%;
 }
-.big-card:hover {
-  width: 30%;
-}
 
 /* petites cartes */
 .little-cards {
@@ -349,9 +333,6 @@ section#activity {
 }
 .little-card img {
   height: 70%;
-}
-.little-card:hover {
-  width: 120%;
 }
 
 /* Bas de page */
@@ -384,6 +365,24 @@ footer li:hover a {
 
 /* mediaquery */
 
+/*Ordinateur*/
+@media screen and (min-width: 993px) {
+  .card:hover .img-container {
+    height: 45%;
+  }
+
+  .famous:hover .card-text {
+    width: 220px;
+  }
+
+  .big-card:hover {
+    width: 30%;
+  }
+
+  .little-card:hover {
+    width: 120%;
+  }
+}
 /*Tablette*/
 @media screen and (max-width: 992px) {
   header {
@@ -506,10 +505,6 @@ footer li:hover a {
     margin: 15px;
   }
 
-  .big-card:hover {
-    width: 100%;
-  }
-
   .little-cards {
     width: 90%;
     max-width: 431px;
@@ -517,10 +512,6 @@ footer li:hover a {
   }
   .little-card {
     margin-bottom: 15px;
-  }
-
-  .little-card:hover .little-cards {
-    width: 100%;
   }
 
   /* Bas de page */
