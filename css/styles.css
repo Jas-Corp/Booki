@@ -231,6 +231,7 @@ article#marseille {
   box-shadow: 5px 5px 15px 5px #82828244;
   margin-bottom: 20px;
   padding: 5px;
+  max-width: 400px;
 }
 
 .card:hover .img-container {
@@ -254,6 +255,7 @@ article#marseille {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: ;
 }
 
 .stars {
