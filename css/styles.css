@@ -13,6 +13,7 @@
 
 /* variable */
 :root {
+  /* couleurs */
   --main-blue: #0065fc;
   --secondary-blue: #deebff;
   --grey: #f2f2f2;
@@ -20,16 +21,21 @@
 }
 
 /* generic */
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 header,
 main {
   font-family: "Raleway", sans-serif;
   margin: 0px 60px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* icon */
@@ -64,7 +70,6 @@ main {
 
 .nav-link a {
   color: inherit;
-  
 }
 .nav-link:hover {
   color: var(--main-blue);
@@ -117,12 +122,11 @@ p {
   font-weight: 600;
   border-radius: 0px 15px 15px 0px;
   background-color: var(--main-blue);
-
 }
-.search-button span{
+.search-button span {
   color: white;
 }
-.search-button i{
+.search-button i {
   display: none;
 }
 
@@ -237,7 +241,6 @@ article#marseille {
   width: 100%;
   height: 100%;
   display: inline-block;
-  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -250,7 +253,6 @@ article#marseille {
 .card-content {
   padding: 15px;
   display: flex;
-
   flex-direction: column;
 }
 
@@ -308,7 +310,6 @@ section#activity {
 /* toutes les cartes */
 .activty-card {
   width: 100%;
-  object-fit: cover;
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px #82828244;
   transition-duration: 0.2s;
@@ -316,7 +317,6 @@ section#activity {
 
 .activty-card img {
   width: 100%;
-  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -384,8 +384,6 @@ footer li:hover a {
 
 /*Tablette*/
 @media screen and (max-width: 992px) {
-
-
   header {
     margin-bottom: 10px;
   }
@@ -395,13 +393,11 @@ footer li:hover a {
     align-items: center;
     justify-content: space-between;
   }
-  article#marseille{
+  article#marseille {
     width: 100%;
 
     margin-bottom: 30px;
   }
-
-
 
   /* Activité */
   .big-card {
@@ -420,8 +416,8 @@ footer li:hover a {
 }
 /*Téléphone*/
 @media screen and (max-width: 768px) {
- 
-  header,main {
+  header,
+  main {
     font-family: "Raleway", sans-serif;
     margin: 0px 10px;
   }
@@ -444,31 +440,31 @@ footer li:hover a {
   }
 
   /* bar de recherche  */
-  #search{
+  #search {
     text-align: center;
-
   }
-  .search-bar{
+  .search-bar {
     justify-content: center;
   }
-  .search-button{
+  .search-button {
     width: 54px;
   }
-  .search-button i{
+  .search-button i {
     display: block;
-
   }
-  .search-button span{
-  display: none;
+  .search-button span {
+    display: none;
   }
 
-  .filters{
+  .filters {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-
   }
-  
+  .filters li {
+    margin-bottom: 10px;
+  }
+
   /* hebergement */
   #hosting {
     flex-direction: column-reverse;
@@ -501,7 +497,6 @@ footer li:hover a {
   }
   .activty-card {
     height: 220px;
-
   }
   .big-card {
     width: 90%;
@@ -517,13 +512,12 @@ footer li:hover a {
     width: 90%;
     max-width: 431px;
     margin-top: 15px;
-
   }
   .little-card {
     margin-bottom: 15px;
   }
 
-  .little-card:hover .little-cards{
+  .little-card:hover .little-cards {
     width: 100%;
   }
 
