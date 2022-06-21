@@ -223,14 +223,14 @@ article#marseille {
 }
 
 .card {
-  min-width: 193px;
   width: 30%;
   height: 220px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px #82828244;
-  margin-bottom: 20px;
   padding: 5px;
+  margin: 10px;
+  min-width: 193px;
   max-width: 400px;
 }
 
@@ -246,12 +246,16 @@ article#marseille {
 }
 
 .card-content {
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 120px;
 }
 
 .stars {
-  margin-top: 10px;
   display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .marseille-more {
@@ -302,6 +306,8 @@ section#activity {
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px #82828244;
   transition-duration: 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .activty-card img {
@@ -311,6 +317,8 @@ section#activity {
 
 .activty-card h3 {
   padding: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* grandes cartes */
@@ -401,12 +409,18 @@ footer li:hover a {
   }
 
   /* Activité */
+  .activty-card {
+    overflow: hidden;
+  }
+  .activty-card h3 {
+    font-size: 15px;
+  }
   .big-card {
     height: 70%;
   }
 
   .big-card img {
-    height: 70%;
+    height: 75%;
   }
   .little-cards {
     height: 70%;
@@ -419,7 +433,6 @@ footer li:hover a {
 @media screen and (max-width: 768px) {
   header,
   main {
-    font-family: "Raleway", sans-serif;
     margin: 0px 10px;
   }
 
@@ -500,7 +513,7 @@ footer li:hover a {
     height: 220px;
   }
   .big-card {
-    width: 90%;
+    width: 85%;
     max-width: 431px;
     margin: 15px;
   }
