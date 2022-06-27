@@ -374,7 +374,7 @@ footer li:hover a {
 /* mediaquery */
 
 /*Ordinateur*/
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   .card:hover .img-container {
     height: 45%;
   }
@@ -470,6 +470,8 @@ footer li:hover a {
     display: none;
   }
 
+  /* Filtres */
+
   .filters {
     width: 90%;
     margin-right: auto;
@@ -513,7 +515,7 @@ footer li:hover a {
     height: 220px;
   }
   .big-card {
-    width: 85%;
+    width: 90%;
     max-width: 431px;
     margin: 15px;
   }
